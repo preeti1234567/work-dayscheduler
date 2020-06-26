@@ -25,7 +25,7 @@ In this project, we made a daily planner which helps in making plans for the sel
 
 In this project we can save the plan and when we refresh it the plans will stil be visible. we are able to edit in the future timeslot and not in the past time slot. Different timeslot is depicted by different color. I use the localstorage to save the content edited by the user. 
 
-My Schedular Website Link ->  (https://preeti1234567.github.io/work-dayschedular/)
+My Schedular Website Link ->  (https://preeti1234567.github.io/work-dayscheduler/)
 
 ![Snapshot](workschedular.png)
 
