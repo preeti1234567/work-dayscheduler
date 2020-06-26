@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    var date = moment().format("YYYY-MM-DD");
     function save() {
         //here we are getting the value of the save button when we click ($(this).attr('value'))
         //using above information we are getting id of the related div ("edit-"number which denotes the specific time"") 
@@ -8,8 +8,8 @@ $(document).ready(function () {
         //here we are getting the text stored in that div and stored in  the variable called divContent
         var divContent = $("#" + id).text();
 
-        //here we are storing the text written in the  div in localStorage
-        localStorage.setItem(id, divContent);
+        //here we are storing the text written in the  div in localStorage as date + id as key
+        localStorage.setItem(date + id, divContent);
     }
     //creating the click event and initiating the function
     $(".fa-edit").on("click", save);
@@ -41,8 +41,8 @@ $(document).ready(function () {
             //here we are making the div uneditable by setting the attribute
             $("#" + id).attr('contenteditable', 'false');
 
-            //here we are accessing the localStorage with the key i.e. id in this case and storing in the variable divContent
-            var divContent = localStorage.getItem(id);
+            //here we are accessing the localStorage with the key i.e. date + id in this case and storing in the variable divContent
+            var divContent = localStorage.getItem(date + id);
 
             //here we are displaying the value  that is stored with the key in local storage
             $("#" + id).text(divContent);
@@ -51,7 +51,7 @@ $(document).ready(function () {
         var id = "edit-" + currentHour;
         $("#" + id).addClass("present");
         $("#" + id).attr('contenteditable', 'false');
-        var divContent = localStorage.getItem(id);
+        var divContent = localStorage.getItem(date + id);
         $("#" + id).text(divContent);
 
         //here loop for the future
@@ -59,7 +59,7 @@ $(document).ready(function () {
             var id = "edit-" + i;
             $("#" + id).addClass("future");
             $("#" + id).attr('contenteditable', 'true');
-            var divContent = localStorage.getItem(id);
+            var divContent = localStorage.getItem(date + id);
             $("#" + id).text(divContent);
         }
     }

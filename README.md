@@ -8,9 +8,9 @@ In this project, we made a daily planner which helps in making plans for the sel
 ### Prerequisites
 1. Bootstrap Framework.(https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css)
 
-2. [Moment.js](https://momentjs.com/)
+2. [For date using Moment.js library](https://momentjs.com/)
 
-3.[For the icon in the save button]"https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+3. [For save button icon]"https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
 
 2. *HTML*
 
@@ -23,9 +23,9 @@ In this project, we made a daily planner which helps in making plans for the sel
 
 ##  Details of Project
 
-In this project we can save the plan and when we refresh it the plans will stil be visible. we are able to edit in the future timeslot and not in the past time slot. Different timeslot is depicted by different color. I use the localstorage to save the content edited by the user. 
+In this project we can save the plan for the day and when we refresh it the plans will stil be visible. We are able to edit in the future timeslot and not in the current or past time slot. Different timeslot with respect to time is depicted by different color.( Grey means past, red means current and green means future time). Using the localstorage to save the content edited by the user so that if can be visble when he refresh the page or visit again in the day.
 
 My Schedular Website Link ->  (https://preeti1234567.github.io/work-dayscheduler/)
 
-![Snapshot](workschedular.png)
+![Snapshot](assets/images/workschedular.png)
 
